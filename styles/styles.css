@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "FjallaOne";
+    src: url("../assets/fonts/FjallaOne-Regular.ttf")
+    format("truetype");
+}
+@font-face {
+    font-family: WorkSans;
+    src: url("../assets/fonts/WorkSans-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: WorkSans, sans-serif;
+    background-color: #d5d5d5;
+}
+
+main{
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+header{
+    /* Por serem elementos de linha(imagem e texto), usaremos "text-align" para alinha o logo e o titulo no centro. Caso fossem elementos de bloco, usaríamos margin: 0 auto */
+
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+h1{
+    font-family: FjallaOne, sans-serif;
+}
+
+form{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px
+}
+
+fieldset{
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+legend{
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 5px;
+}
