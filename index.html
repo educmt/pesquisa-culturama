@@ -8,32 +8,32 @@
     <title>Pesquisa Culturama</title>
 </head>
 <body>
-    <header>
-        <img src="assets/img/logo-culturama.png" alt="Logo culturama">
-        <h1>Pesquisa Online</h1>
-    </header>
     <main>
+        <header>
+            <img src="assets/img/logo-culturama.png" alt="Logo culturama">
+            <h1>Pesquisa Online</h1>
+        </header>    
         <section>
             <form action="" method="get">
                 <fieldset>
                     <legend>Dados pessoais</legend>
                     
-                    <label for="name">Nome</label>
+                    <label for="name">Nome:</label>
                     <input id="name" type="text" name="userName" required>
                     <br>
-                    <label for="age">Idade</label>
+                    <label for="age">Idade:</label>
                     <input id="age" type="number" name="userAge" min="12" max="100" required>
                     <br>
-                    <label for="birthDate">Data de nascimento</label>
+                    <label for="birthDate">Data de nascimento:</label>
                     <input id="birthDate" type="date" name="userBirthDate">
                     <br>
-                    <label for="email">Email</label>
+                    <label for="email">Email:</label>
                     <input id="email" type="email" name="userEmail" required>
                     <br>
-                    <label for="phoneNumber">Telefone</label>
+                    <label for="phoneNumber">Telefone:</label>
                     <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="(DDD)+Telefone">
                     <br>
-                    <label for="photo">Upload de foto</label>
+                    <label for="photo">Upload de foto:</label>
                     <input id="photo" type="file" accept="image/*" name="userPhoto" >
                 </fieldset> 
                 
@@ -96,23 +96,23 @@
                     
                     <label for="city">Cidade: </label>
                     <input id="city" type="text" name="userCity" placeholder="Ex: Fortaleza" autocomplete="address-level2">
-
+    
                 </fieldset> 
                 
                 <fieldset>
                     <legend>Hábitos</legend>
                     <p>Redes sociais: </p>
-
+    
                     <input id="facebook" type="checkbox" name="socialMedia" value="facebook">
                     <label for="facebook">Facebook</label>
-
+    
                     <input id="linkedin" type="checkbox" name="socialMedia" value="linkedin">
                     <label for="linkedin">Linkedin</label>
-
+    
                     <br>
                     <input id="instagram" type="checkbox" name="socialMedia" value="instagram">
                     <label for="instagram">Instagram</label>
-
+    
                     <input id="x" type="checkbox" name="socialMedia" value="x">
                     <label for="x">X</label>
                     <br>
@@ -128,7 +128,7 @@
                     <label for="favoriteColor">Cor favorita: </label>
                     <input type="color" name="userFavoriteColor" id="favoriteColor">
                 </fieldset>
-
+    
                 <fieldset>
                     <legend>Opinião</legend>
                     <p>O que você acha da qualidade do nosso serviço? </p>
@@ -149,20 +149,18 @@
                     <textarea name="userComment" id="comment" cols="50" rows="5" placeholder="Digite aqui..."></textarea>
                 </fieldset>
                 <fieldset>
-                    <legend>Confirmações: </legend>
+                    <legend>Confirmações </legend>
                     <input type="checkbox" name="userLgpdTerm" id="lgpdTerm" value="accepted" required>
                     <label for="lgpdTerm">Eu aceito participar dessa pesquisa</label>
                     <br>
                     <input type="checkbox" name="userGetResult" id="getResult" value="accepted">
                     <label for="lgpdTerm">Desejo receber o resultado por email</label>
                 </fieldset>
-
+                
                 <button type="submit">Enviar</button>
                 <button type="reset">Limpar</button>
-
             </form>
-        </section>
+        </section>    
     </main>
-    
 </body>
 </html>
